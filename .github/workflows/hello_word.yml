@@ -51,8 +51,8 @@ jobs:
     name: Hello world MacOS
     runs-on: macos-latest
     needs:
-         - hello-word-ubuntu
-         - hello-word-windows
+     - hello-word-ubuntu
+     - hello-word-windows
          
     steps:
       - name: Print Hello World MacOS

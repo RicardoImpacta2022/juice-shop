@@ -48,12 +48,12 @@ jobs:
        run: echo 'Hello World rodando no windows'
        
   hello-world-macos:
-    name: Hello world MacOS
-    runs-on: macos-latest
+    name: Hello Wolrd MacOS
     needs:
-     - hello-world-ubuntu
-     - hello-world-windows
-         
+      - hello-world-ubuntu
+      - hello-world-windows
+    runs-on: macos-latest
+    
     steps:
       - name: Print Hello World MacOS
         run: echo 'Hello World rodando no MacOS'
